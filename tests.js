@@ -5,6 +5,8 @@ import {
     multiply,
     triangleArea,
     greater100,
+    //oddOrEven,
+    formatName,
 } from './functions.js';
 
 const test = QUnit.test;
@@ -144,6 +146,37 @@ test('less than 100', (expect) => {
     Uses: modulo operator, comparison operator, if/else control flow
 */
 
+//test('otherwise', (expect) => {
+//    const x = 3;
+ //   const expected = 'odd';
+
+//    const actual = oddOrEven(x);
+
+//    expect.equal(actual, expected);
+//});
+
+//test('otherwise', (expect) => {
+//    const y = 6;
+ //   const expected = 'even';
+    
+ //   const actual = oddOrEven(y);
+
+ //   expect.equal(actual, expected);
+//});
+
+/* Write a function that takes two rock-paper-scissors throws
+   and returns 'player 1' if first throw wins,
+   'player 2' if second throw wins, otherwise 'draw'
+
+   'rock', 'scissors' --> 'player 1'
+   'rock', 'paper' --> 'player 2'
+   'rock', 'rock' --> 'draw'
+
+   Test all possible cases, but
+   -you can combine into tests like 'player 1 wins', 'player 2 wins', 'players draw'
+   - inline your "arrange" inputs and outputs
+
+   Uses: comparison operator, if/else control flow
 
 
 /* 
@@ -156,6 +189,15 @@ test('less than 100', (expect) => {
     Uses: let variable with reassignment, string concatenation, 
     existence comparison operator, if control flow
 */
+
+test('formats a two part name', (expect) => {
+    const first = 'Ruth';
+    const last = 'Ginsburg';
+    const middle = 'Bader';
+
+    expect.equal(formatName(first, last,), 'Ruth Ginsburg');
+    expect.equal(formatName(first, last, middle), 'Ruth Bader Ginsburg');
+});
 
 /* 
     Write a function that takes a name, type, age, and food

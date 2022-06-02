@@ -21,3 +21,22 @@ export function greater100(x, y) {
     else
         return false;
 }
+
+//export function oddOrEven(x, y) {
+  //  if (x % 2) {
+   //     return 'even';
+   // }
+//else return 'odd';
+//}    
+
+export function formatName(first, last, middle) {
+    let name = first;
+
+    if (middle) {
+        name += ' ' + middle;
+    }
+
+    name += ' ' + last;
+
+    return name;
+}
