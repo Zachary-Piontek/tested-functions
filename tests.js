@@ -2,6 +2,7 @@
 import {
     add, 
     subtract,
+    multiply,
 } from './functions.js';
 
 const test = QUnit.test;
@@ -62,17 +63,20 @@ test('subtract two numbers', (expect) => {
 
     Uses: Math operator(s)
 */
-/*
+
 test('return number of seconds', (expect) => {
+    // Arrange
     const x = 10;
     const y = 60;
     const expected = 600;
 
+    // Act 
     const actual = multiply(x, y);
 
+    //
     expect.equal(actual, expected);
 });
-*/
+
 
 
 /* 
