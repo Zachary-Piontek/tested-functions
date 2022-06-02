@@ -92,10 +92,11 @@ test('return number of seconds', (expect) => {
 test('area of triangle', (expect) => {
     const x = 5;
     const y = 10;
+    const z = 0.5;
     const expected = 25;
 
     // Act
-    const actual = triangleArea(x, y);
+    const actual = triangleArea(x, y, z);
 
     // Expect
     expect.equal(actual, expected);
