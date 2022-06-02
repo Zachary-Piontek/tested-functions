@@ -1,13 +1,26 @@
 // IMPORT MODULES under test here:
 import {
-    add,
+    add, 
+    subtract,
 } from './functions.js';
 
 const test = QUnit.test;
 
+/*
+
+    Write a function that takes in two numbers and
+    returns their sum (add)
+
+    2, 5 --> 7
+
+    Uses: Math operator
+
+*/
+
 test('demo: adds two numbers', (expect) => {
     //Arrange
     // Set up your arguments and expectations
+    // Inputs and outputs
     const x = 2;
     const y = 5;
     const expected = 7;
@@ -20,6 +33,26 @@ test('demo: adds two numbers', (expect) => {
     // Make assertions about what is expected versus the actual result
     expect.equal(actual, expected);
 });
+/*
+
+Write a function that takes in two numbers and returns their 
+    difference (subtract) 
+    9 - 3 = 6
+
+*/
+
+test('subtract two numbers', (expect) => {
+    // Arrange
+    const x = 9;
+    const y = 3;
+    const expected = 6;
+
+    // Act
+    const actual = subtract(x, y);
+
+    // Expect
+    expect.equal(actual, expected);
+});
 
 /* 
     Write a function that takes in number of minutes
@@ -29,6 +62,18 @@ test('demo: adds two numbers', (expect) => {
 
     Uses: Math operator(s)
 */
+/*
+test('return number of seconds', (expect) => {
+    const x = 10;
+    const y = 60;
+    const expected = 600;
+
+    const actual = multiply(x, y);
+
+    expect.equal(actual, expected);
+});
+*/
+
 
 /* 
     Write a function that takes in the base and height
