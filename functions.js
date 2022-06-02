@@ -14,3 +14,10 @@ export function multiply(x, y) {
 export function triangleArea(x, y, z) {
     return z * x * y;
 }
+
+export function greater100(x, y) {
+    if (x + y < 100)
+        return true;
+    else
+        return false;
+}

@@ -4,6 +4,7 @@ import {
     subtract,
     multiply,
     triangleArea,
+    greater100,
 } from './functions.js';
 
 const test = QUnit.test;
@@ -113,6 +114,26 @@ test('area of triangle', (expect) => {
     Uses: Comparison operator(s), if/else control flow
 */
 
+test('greater than 100', (expect) => {
+    const x = 88;
+    const y = 60;
+    const expected = false;
+
+    const actual = greater100(x, y);
+
+    expect.equal(actual, expected);
+});
+
+test('less than 100', (expect) => {
+    const x = 25;
+    const y = 13;
+    const expected = true;
+
+    const actual = greater100(x, y);
+
+    expect.equal(actual, expected);
+});
+
 /* 
     Write a function that takes a number and
     and returns 'even' if number is even, otherwise 'odd'.
@@ -122,6 +143,8 @@ test('area of triangle', (expect) => {
 
     Uses: modulo operator, comparison operator, if/else control flow
 */
+
+
 
 /* 
     Write a function that takes in a first, last, and a third optional
